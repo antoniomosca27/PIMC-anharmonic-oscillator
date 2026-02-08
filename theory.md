@@ -92,10 +92,10 @@ $$
 \exp\left(-\frac{m}{2a}(x'-x)^2\right)
 $$
 
-Putting everything together yields a Euclidean path integral over **periodic trajectories** $x(\tau)$ with $x(0)=x(\beta)$:
+This turns the quantum trace into an **integral over paths** that are periodic in imaginary time, \(x(0)=x(\beta)\):
 
 $$
-Z =
+Z(\beta) =
 \int \mathcal{D}x(\tau) e^{-S_E[x]}
 $$
 
@@ -126,7 +126,7 @@ S(\{x_i\}) =
 \sum_{i=0}^{N-1}
 \left[
 \frac{m}{2a}(x_{i+1}-x_i)^2
-\pm
++
 a\,V(x_i)
 \right]
 $$
