@@ -106,7 +106,7 @@ PIMC-anharmonic-oscillator/
 │   ├── check_notebooks_clean.py
 │   ├── clean_artifacts.sh
 │   └── strip_notebook_outputs.py
-├── src/pimc_oscillator/
+├── src/
 │   ├── __init__.py
 │   ├── action.py
 │   ├── analysis.py
