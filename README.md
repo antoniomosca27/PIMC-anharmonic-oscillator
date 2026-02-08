@@ -192,4 +192,4 @@ bash scripts/clean_artifacts.sh
 
 ## License
 
-MIT
+This project is licensed under the MIT License.
