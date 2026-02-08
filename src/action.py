@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import numpy as np
 from numpy.typing import ArrayLike, NDArray
+
 from src.config import LatticeParams, PotentialParams
 from src.potential import potential_energy, potential_force
 

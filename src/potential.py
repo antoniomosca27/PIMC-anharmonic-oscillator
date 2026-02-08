@@ -6,6 +6,7 @@ from dataclasses import dataclass
 
 import numpy as np
 from numpy.typing import ArrayLike, NDArray
+
 from src.config import PotentialParams
 
 FloatArray = NDArray[np.float64]

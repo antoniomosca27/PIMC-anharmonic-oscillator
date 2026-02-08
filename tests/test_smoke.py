@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import numpy as np
+
 from src import LatticeParams, PotentialParams, RunConfig, SamplerParams
 from src.analysis import effective_mass_from_correlator, fit_gap_cosh
 from src.observables import bootstrap_correlator

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import numpy as np
+
 from src import LatticeParams, PotentialParams
 from src.action import (
     action_gradient,

@@ -7,6 +7,7 @@ from typing import Any
 
 import numpy as np
 from numpy.typing import ArrayLike, NDArray
+
 from src.action import (
     action_gradient,
     euclidean_lattice_action,

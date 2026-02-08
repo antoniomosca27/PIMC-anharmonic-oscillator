@@ -8,6 +8,7 @@ from typing import Any
 
 import numpy as np
 from numpy.typing import ArrayLike, NDArray
+
 from src.analysis import (
     bootstrap_gap_from_correlators,
     bootstrap_mean,

@@ -5,6 +5,7 @@ from __future__ import annotations
 import matplotlib
 import numpy as np
 import pytest
+
 from src import LatticeParams, PotentialParams
 
 # Ensure tests never require an interactive display backend.

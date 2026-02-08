@@ -11,6 +11,7 @@ from typing import Any
 
 import numpy as np
 from numpy.typing import ArrayLike, NDArray
+
 from src.config import RunConfig
 
 FloatArray = NDArray[np.float64]
