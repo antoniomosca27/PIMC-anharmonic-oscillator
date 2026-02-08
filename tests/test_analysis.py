@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import numpy as np
-
 from pimc_oscillator.analysis import (
     effective_mass_bootstrap_from_correlators,
     effective_mass_from_correlator,

@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import numpy as np
-
 from pimc_oscillator import LatticeParams, PotentialParams
 from pimc_oscillator.action import (
     action_gradient,

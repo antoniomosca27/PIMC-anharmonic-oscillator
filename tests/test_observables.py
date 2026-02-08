@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import numpy as np
-
 from pimc_oscillator.observables import (
     bootstrap_correlator,
     correlator_single_configuration,
