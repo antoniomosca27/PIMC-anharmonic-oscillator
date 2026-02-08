@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import numpy as np
 from numpy.typing import ArrayLike, NDArray
-
 from pimc_oscillator.config import LatticeParams, PotentialParams
 from pimc_oscillator.potential import potential_energy, potential_force
 

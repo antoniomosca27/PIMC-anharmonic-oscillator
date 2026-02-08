@@ -8,6 +8,12 @@ This repository provides a Python implementation of Path Integral Monte Carlo (P
 
 * * *
 
+## Theory
+
+A theoretical treatment of the problem and a detailed explanation of the PIMC method used in this project are provided in `theory.pdf`.
+
+* * *
+
 ## Scope
 
 - Simulate Euclidean-time lattice paths for the quartic anharmonic oscillator.
@@ -130,6 +136,7 @@ PIMC-anharmonic-oscillator/
 ├── reports/.gitkeep
 ├── pyproject.toml
 ├── requirements.txt
+├── theory.pdf
 └── README.md
 ```
 
