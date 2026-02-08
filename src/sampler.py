@@ -7,13 +7,13 @@ from typing import Any
 
 import numpy as np
 from numpy.typing import ArrayLike, NDArray
-from pimc_oscillator.action import (
+from src.action import (
     action_gradient,
     euclidean_lattice_action,
     local_delta_action,
 )
-from pimc_oscillator.config import LatticeParams, PotentialParams, RunConfig
-from pimc_oscillator.utils import make_rng
+from src.config import LatticeParams, PotentialParams, RunConfig
+from src.utils import make_rng
 
 FloatArray = NDArray[np.float64]
 IntArray = NDArray[np.int64]

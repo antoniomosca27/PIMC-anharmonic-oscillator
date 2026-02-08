@@ -8,7 +8,7 @@ from typing import Any
 
 import numpy as np
 from numpy.typing import ArrayLike, NDArray
-from pimc_oscillator.analysis import (
+from src.analysis import (
     bootstrap_gap_from_correlators,
     bootstrap_mean,
     default_fit_window_indices,
@@ -20,8 +20,8 @@ from pimc_oscillator.analysis import (
     integrated_autocorrelation_time,
     symmetrize_periodic_correlator,
 )
-from pimc_oscillator.config import RunConfig
-from pimc_oscillator.io import (
+from src.config import RunConfig
+from src.io import (
     RunPaths,
     create_run_directories,
     save_analysis_json,
@@ -29,12 +29,12 @@ from pimc_oscillator.io import (
     save_config_json,
     save_run_summary_json,
 )
-from pimc_oscillator.observables import (
+from src.observables import (
     bootstrap_correlator,
     mean_position,
     mean_square_position,
 )
-from pimc_oscillator.sampler import run_pimc
+from src.sampler import run_pimc
 
 FloatArray = NDArray[np.float64]
 

@@ -24,8 +24,7 @@ dev = [
 ]
 
 [tool.setuptools]
-packages = ["pimc_oscillator"]
-package-dir = { "pimc_oscillator" = "src" }
+packages = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

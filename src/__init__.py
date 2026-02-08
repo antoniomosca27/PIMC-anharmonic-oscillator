@@ -1,24 +1,24 @@
 """Public API for the PIMC anharmonic oscillator library."""
 
-from pimc_oscillator.action import (
+from src.action import (
     action_gradient,
     euclidean_lattice_action,
     local_delta_action,
 )
-from pimc_oscillator.config import (
+from src.config import (
     LatticeParams,
     PotentialParams,
     RunConfig,
     SamplerParams,
 )
-from pimc_oscillator.experiment import run_experiment, run_lambda_scan, run_single_case
-from pimc_oscillator.potential import (
+from src.experiment import run_experiment, run_lambda_scan, run_single_case
+from src.potential import (
     AnharmonicPotential,
     potential_energy,
     potential_force,
 )
-from pimc_oscillator.sampler import PIMCChain, run_pimc
-from pimc_oscillator.utils import (
+from src.sampler import PIMCChain, run_pimc
+from src.utils import (
     make_rng,
     periodic_index,
     set_deterministic_seed,

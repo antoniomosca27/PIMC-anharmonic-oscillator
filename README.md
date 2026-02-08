@@ -66,7 +66,7 @@ Minimal library usage:
 ```python
 from pathlib import Path
 
-from pimc_oscillator import (
+from src import (
     LatticeParams,
     PotentialParams,
     RunConfig,

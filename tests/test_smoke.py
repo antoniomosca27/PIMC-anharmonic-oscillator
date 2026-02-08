@@ -3,10 +3,10 @@
 from __future__ import annotations
 
 import numpy as np
-from pimc_oscillator import LatticeParams, PotentialParams, RunConfig, SamplerParams
-from pimc_oscillator.analysis import effective_mass_from_correlator, fit_gap_cosh
-from pimc_oscillator.observables import bootstrap_correlator
-from pimc_oscillator.sampler import run_pimc
+from src import LatticeParams, PotentialParams, RunConfig, SamplerParams
+from src.analysis import effective_mass_from_correlator, fit_gap_cosh
+from src.observables import bootstrap_correlator
+from src.sampler import run_pimc
 
 
 def test_smoke_small_end_to_end_pipeline() -> None:
