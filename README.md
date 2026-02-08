@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-This repository provides a research-oriented Python implementation of Path Integral Monte Carlo (PIMC) for the 0+1D quartic $\phi^4$ anharmonic oscillator. It includes a typed library API, a single end-to-end pipeline notebook, deterministic tests, and CI quality gates.
+This repository provides a Python implementation of Path Integral Monte Carlo (PIMC) for the 0+1D quartic $\phi^4$ anharmonic oscillator. It includes a typed library API, a single end-to-end pipeline notebook, deterministic tests, and CI quality gates.
 
 * * *
 
