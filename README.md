@@ -5,6 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 This repository provides a Python implementation of Path Integral Monte Carlo (PIMC) for the 0+1D quartic $\phi^4$ anharmonic oscillator. It includes a typed library API, a single end-to-end pipeline notebook, deterministic tests, and CI quality gates.
+The central scientific target is to estimate the fundamental spectral gap $\Delta = E_1 - E_0$ across quartic couplings $\lambda$, i.e. to determine and visualize the trend $\Delta(\lambda)$.
 
 * * *
 
@@ -17,7 +18,9 @@ A theoretical treatment of the problem and a detailed explanation of the PIMC me
 ## Scope
 
 - Simulate Euclidean-time lattice paths for the quartic anharmonic oscillator.
-- Estimate correlators, effective masses, and energy gaps from Monte Carlo samples.
+- Estimate correlators, effective masses, and bootstrap uncertainties from Monte Carlo samples.
+- Extract the fundamental gap at each coupling and build the gap-vs-coupling curve $\Delta(\lambda)$.
+- Use the harmonic point $\lambda=0$ as an analytic anchor before interpreting anharmonic points.
 - Persist run artifacts under reproducible `logs/` and `reports/` run directories.
 - Maintain code quality via `ruff` and `pytest` in GitHub Actions.
 
@@ -54,12 +57,15 @@ jupyter notebook notebooks/PIMC_anharmonic_oscillator_pipeline.ipynb
 
 The notebook is parameter-driven: edit only the **Parameters** cell, then run all cells.
 By default it runs a fast but stable HMC scan with `lambda = [0.0, 0.25, 0.5, 1.0]`.
+The run is organized around one end product: the estimated $\Delta(\lambda)$ curve and its uncertainty bars.
 The `lambda=0.0` point is the built-in harmonic sanity check:
 - sampled correlator points should overlap the analytic harmonic curve within uncertainties,
 - the extracted harmonic gap should be close to `OMEGA`,
 - the effective-mass plot should show a visible plateau near `OMEGA`.
 - invalid effective-mass points are masked as `NaN` by default
   (`EFFECTIVE_MASS_INVALID_AS_NAN = True`) to avoid misleading near-zero artifacts.
+After harmonic validation, the anharmonic points (`lambda > 0`) are interpreted through the final
+gap trend plot `gap_vs_lambda.png`.
 
 Minimal library usage:
 

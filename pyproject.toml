@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "pimc-anharmonic-oscillator"
 version = "0.1.0"
-description = "Path Integral Monte Carlo tools for the 0+1D quartic anharmonic oscillator."
+description = "Path Integral Monte Carlo tools to estimate the quartic-oscillator gap trend Delta(lambda)."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }

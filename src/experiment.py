@@ -1,4 +1,4 @@
-"""High-level experiment orchestration for PIMC production runs."""
+"""High-level experiment orchestration for PIMC runs and Delta(lambda) extraction."""
 
 from __future__ import annotations
 
@@ -387,7 +387,11 @@ def run_lambda_scan(
     effective_mass_snr_min: float | None = None,
     progress: bool = False,
 ) -> dict[str, Any]:
-    """Run multiple couplings in one shared run directory tree."""
+    """Run multiple couplings and assemble the gap trend Delta(lambda).
+
+    This scan is the main workflow-level product of the repository: one gap
+    estimate per coupling, plus arrays ready for direct gap-vs-lambda plots.
+    """
     lam_values = np.asarray(lambdas, dtype=np.float64)
     if lam_values.ndim != 1 or lam_values.size < 1:
         raise ValueError("lambdas must be a one-dimensional non-empty array")

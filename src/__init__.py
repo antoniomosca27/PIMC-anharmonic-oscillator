@@ -1,4 +1,4 @@
-"""Public API for the PIMC anharmonic oscillator library."""
+"""Public API for PIMC studies of the quartic oscillator gap trend Delta(lambda)."""
 
 from src.action import (
     action_gradient,
